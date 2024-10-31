@@ -1,0 +1,10 @@
+netneurotools>=0.2.3
+nibabel>=4.0.1
+numpy>=1.23.5
+pandas>=1.5.3
+plotly>=5.17.0
+POT>=0.9.1
+scikit_learn>=1.2.1
+scipy>=1.10.0
+statsmodels>=0.13.5
+tensorly>=0.8.1
