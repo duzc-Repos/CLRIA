@@ -1,0 +1,10 @@
+numpy
+pandas
+tensorly
+scipy
+statsmodels
+scikit_learn
+nibabel
+netneurotools
+POT
+plotly

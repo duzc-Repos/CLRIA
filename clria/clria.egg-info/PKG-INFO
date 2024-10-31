@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: clria
+Version: 1.0.7
+Summary: Package to decipher LRI-mediated brain network communication
+Home-page: https://github.com/duzc-Repos/CLRIA
+Author: DU Zongchang
+License: MIT
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tensorly
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: scikit_learn
+Requires-Dist: nibabel
+Requires-Dist: netneurotools
+Requires-Dist: POT
+Requires-Dist: plotly
+
+# CLRIA
