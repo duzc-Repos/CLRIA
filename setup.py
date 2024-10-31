@@ -24,7 +24,7 @@ setup(
     package_data = {
         '':['*.txt', '*.xlsx', '*.tsv', '*.csv']
     },
-    packages=find_packages(exclude=['CLRIA_reproducibility', 'tests*']),
+    packages=find_packages(exclude=['CLRIA_tutorial', 'tests*']),
     
     install_requires=[
         'numpy',  'pandas', 'tensorly',
