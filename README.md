@@ -63,9 +63,9 @@ clria.otpl.plot_sankey(tca_obj, annot, figure_size=(600, 700))
 
 ### Notebook
 
-*   See `./tutorial/tutorial.ipynb` for an application of CLRIA to publicly available gene expression (AHBA) and diffusion MRI (HCP) data. The data used in this tutorial can be found at https://doi.org/10.5281/zenodo.13906808
+*   See `./tutorial/tutorial.ipynb` for an application of CLRIA to publicly available gene expression (AHBA) and diffusion MRI (HCP) data. The data used in this tutorial can be found at https://zenodo.org/records/139068088
 
-*   The code to replicate the analysis of the study are available at https://doi.org/10.5281/zenodo.13906808.
+*   The code to replicate the analysis of the study are available at https://zenodo.org/records/13906808.
 
 ## API
 
