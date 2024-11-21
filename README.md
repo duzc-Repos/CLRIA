@@ -2,6 +2,8 @@
 
 CLRIA: connectome-constrained ligand-receptor interaction analysis for understanding brain network communication
 
+<img src="./img/Fig1.png" alt="Fig1" style="zoom: 45%;" />
+
 
 
 ## Installation
