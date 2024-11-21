@@ -63,11 +63,9 @@ clria.otpl.plot_sankey(tca_obj, annot, figure_size=(600, 700))
 
 ### Notebook
 
-See xxx for an application of CLRIA to publicly available gene expression (AHBA) and diffusion MRI (HCP) data.
+*   See `./tutorial/tutorial.ipynb` for an application of CLRIA to publicly available gene expression (AHBA) and diffusion MRI (HCP) data. The data used in this tutorial can be found at https://doi.org/10.5281/zenodo.13906808
 
-The code to replicate the analysis of the study are available at https://doi.org/10.5281/zenodo.13906808.
-
-
+*   The code to replicate the analysis of the study are available at https://doi.org/10.5281/zenodo.13906808.
 
 ## API
 
@@ -111,8 +109,7 @@ Here is a brief list of the functionalities provided by this repository. Additio
 *   `.otpl.plot_sankey(tca_obj, annot, ...)`: sankey plot of communication patterns, LR or pathway communication network.
 *   `.otpl.plot_circos(tca_obj, annot, name, ...)`: circos plot of communication patterns, LR or pathway communication network.
 
-
-
 ### simmulation: otsim
 
-`otsim.simu_data(n_r, n1, n2, n_lr, ...)`: simulating data using inverse optimal transport (iOT).
+*   `otsim.simu_data(n_r, n1, n2, n_lr, ...)`: simulating data using inverse optimal transport (iOT).
+
