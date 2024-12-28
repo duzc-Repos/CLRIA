@@ -77,7 +77,7 @@ class OTRegression(object):
                 dist_prev = self.get_opt_OT_dist(beta, P)
                 continue
             
-            dist_curr = self.get_opt_OT_dist(beta, P) * 1e8
+            dist_curr = self.get_opt_OT_dist(beta, P)
             rel_err = np.abs(dist_curr - dist_prev) / (dist_prev)
             if log:
                 print(k, dist_curr, rel_err, sep="\t")
@@ -173,7 +173,7 @@ class UOTRegression(object):
                 dist_prev = self.get_opt_UOT_dist(beta, P)
                 continue
             
-            dist_curr = self.get_opt_UOT_dist(beta, P) * 1e8
+            dist_curr = self.get_opt_UOT_dist(beta, P)
             rel_err = np.abs(dist_curr - dist_prev) / (dist_prev)
             if log:
                 print(k, dist_curr, rel_err, sep="\t")

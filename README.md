@@ -71,12 +71,12 @@ clria.otpl.plot_sankey(tca_obj, annot, figure_size=(600, 700))
 
 Here is a brief list of the functionalities provided by this repository. Additional information is provided in their docstring or by calling `help(function_name)`.
 
-### preprocessing: otpl
+### preprocessing: otpp
 
-*   `otpl.LRdatabse(lrdb, ...)`: 
+*   `otpp.LRdatabse(lrdb, ...)`: 
     *   `.extract_lr_expression(self, expr, ...)`: extract ligand and receptor expression from gene expression matrix.
     *   `.generate_coupling_matrix(self, ...)`: generate two matrix $T_L, T_R$ recoding the correspondence between LR pairs and ligand or receptor.
-*   `otpl.BNCM()`:
+*   `otpp.BNCM()`:
     *   `.proximal_to_distance(self, SC)`: transfrom the fiber density measure to distance measures.
     *   `.calc_navigation(self, L, D)`: calculate navigation measure based on $L$ (strength-to-length remapping of the connection weight) and $D$ (distance matrix, e.g. Euclidean distance between nodes)
 

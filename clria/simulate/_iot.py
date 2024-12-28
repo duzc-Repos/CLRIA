@@ -124,9 +124,15 @@ def simu_data(n_r=10, n1=123, n2=None, n_lr=500,
     ## systhesis data
     L = np.dot(A * B.sum(axis=0, keepdims=True), np.dot(C.T, TL))
     R = np.dot(B * A.sum(axis=0, keepdims=True), np.dot(C.T, TR))
-
-    M = np.exp(-np.dot(A * C.sum(axis=0, keepdims=True), B.T)/epsilon)
-    M = M * (scale_factor / M.sum())
+    
+    ## stable softmax
+    #M = np.exp(-np.dot(A * C.sum(axis=0, keepdims=True), B.T)/epsilon)
+    #M = M * (scale_factor / M.sum())
+    P = -np.dot(A * C.sum(axis=0, keepdims=True), B.T)/epsilon
+    P -= np.max(P)
+    log_M = np.log( scale_factor/np.exp(P).sum() ) + P
+    M = np.exp(log_M)
+    
     #print(M.shape, np.isnan(M).sum() )
 
     if is_decomposition:
