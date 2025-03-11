@@ -20,22 +20,30 @@ setup(
         'Programming Language :: Python :: 3.8',
     ],
     
-    #include_package_data=True,
-    package_data = {
-        '':['*.txt', '*.xlsx', '*.tsv', '*.csv'],
-        'clria.preprocessing.LRdatabase':['*.tsv']
-    },
+    include_package_data=True, 
+    
+    #package_data = {
+    #    '':['*.txt', '*.xlsx', '*.tsv', '*.csv'],
+    #    'clria.preprocessing.LRdatabase':['*.tsv']
+    #},
     #packages=find_packages(exclude=['CLRIA_tutorial', 'tests*']),
-    packages=find_namespace_packages(where=""),
+    #packages=find_namespace_packages(where=""),
     #package_dir={"": "clria"},
     
+    packages=find_packages(where=""),
+    #package_dir={"": "clria"},
+    #package_data={
+    #    '':['*.txt', '*.xlsx', '*.tsv', '*.csv'],
+    #    'clria.preprocessing.LRdatabase':['*.tsv'],
+    #},
+    
     install_requires=[
-        'numpy',  'pandas', 'tensorly',
+        'numpy',  'pandas', 'tensorly', 'fastparquet',
         'scipy', 'statsmodels',
         'scikit_learn',
-        'nibabel', 'netneurotools',
+        'nibabel', 'netneurotools', 'bctpy',
         'POT',
-        'plotly', 'pycirclize',
+        'seaborn', 'plotnine', 'plotly', 'pycirclize', 'kaleido', 'nbformat',
         'tqdm',
     ],
     python_requires='>=3.8',

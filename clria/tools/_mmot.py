@@ -525,7 +525,7 @@ class MMOTNTD(OBJFUNC):
         if n_round == 0:
              optA, optB, optC = self.random_init1(r, n_iter=n_iter1)
         else:
-            optF = np.Inf
+            optF = np.inf
             for _ in range(n_round):
                 A_test, B_test, C_test = self.random_init1(r, n_iter=n_iter1)
                 for _ in range(n_iter2):

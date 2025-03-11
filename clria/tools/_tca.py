@@ -122,9 +122,9 @@ class TCA(object):
 
         """
         ## type check
-        if np.alltrue([ isinstance(i, str) for i in idx]):
+        if np.all([ isinstance(i, str) for i in idx]):
             select_Ce = self.C_.loc[idx, :]
-        elif np.alltrue([ isinstance(i, int) for i in idx]):
+        elif np.all([ isinstance(i, int) for i in idx]):
             select_Ce = self.C_.iloc[idx, :]
         else:
             raise ValueError("The data types in the list must all be str or int.")

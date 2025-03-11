@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: clria
-Version: 1.0.8
+Version: 1.0.9
 Summary: Package to decipher LRI-mediated brain network communication
 Home-page: https://github.com/duzc-Repos/CLRIA
 Author: DU Zongchang
@@ -14,14 +14,20 @@ License-File: LICENSE
 Requires-Dist: numpy
 Requires-Dist: pandas
 Requires-Dist: tensorly
+Requires-Dist: fastparquet
 Requires-Dist: scipy
 Requires-Dist: statsmodels
 Requires-Dist: scikit_learn
 Requires-Dist: nibabel
 Requires-Dist: netneurotools
+Requires-Dist: bctpy
 Requires-Dist: POT
+Requires-Dist: seaborn
+Requires-Dist: plotnine
 Requires-Dist: plotly
 Requires-Dist: pycirclize
+Requires-Dist: kaleido
+Requires-Dist: nbformat
 Requires-Dist: tqdm
 
 # CLRIA
@@ -89,20 +95,20 @@ clria.otpl.plot_sankey(tca_obj, annot, figure_size=(600, 700))
 
 ### Notebook
 
-*   See `./tutorial/tutorial.ipynb` for an application of CLRIA to publicly available gene expression (AHBA) and diffusion MRI (HCP) data. The data used in this tutorial can be found at https://doi.org/10.5281/zenodo.13906808
+*   See `./tutorial/tutorial.ipynb` for an application of CLRIA to publicly available gene expression (AHBA) and diffusion MRI (HCP) data. The data used in this tutorial can be found at https://zenodo.org/records/139068088
 
-*   The code to replicate the analysis of the study are available at https://doi.org/10.5281/zenodo.13906808.
+*   The code to replicate the analysis of the study are available at https://zenodo.org/records/13906808.
 
 ## API
 
 Here is a brief list of the functionalities provided by this repository. Additional information is provided in their docstring or by calling `help(function_name)`.
 
-### preprocessing: otpl
+### preprocessing: otpp
 
-*   `otpl.LRdatabse(lrdb, ...)`: 
+*   `otpp.LRdatabse(lrdb, ...)`: 
     *   `.extract_lr_expression(self, expr, ...)`: extract ligand and receptor expression from gene expression matrix.
     *   `.generate_coupling_matrix(self, ...)`: generate two matrix $T_L, T_R$ recoding the correspondence between LR pairs and ligand or receptor.
-*   `otpl.BNCM()`:
+*   `otpp.BNCM()`:
     *   `.proximal_to_distance(self, SC)`: transfrom the fiber density measure to distance measures.
     *   `.calc_navigation(self, L, D)`: calculate navigation measure based on $L$ (strength-to-length remapping of the connection weight) and $D$ (distance matrix, e.g. Euclidean distance between nodes)
 

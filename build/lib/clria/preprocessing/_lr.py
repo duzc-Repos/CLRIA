@@ -103,7 +103,7 @@ class LRdatabase(object):
                 l_sym, r_sym = l_id.split("_"), r_id.split("_")
                 l_isin = [ g in self.L.columns for g in l_sym ]
                 r_isin = [ g in self.R.columns for g in r_sym ]
-                if np.alltrue(l_isin) and np.alltrue(r_isin):
+                if np.all(l_isin) and np.all(r_isin):
                     TL[lr_id] = { g:1 for g in l_sym}
                     TR[lr_id] = { r:1 for r in r_sym}
         else:
@@ -123,7 +123,7 @@ class LRdatabase(object):
             l_syms, r_syms = l_sym.split("_"), r_sym.split("_")
             l_isin = [ l in expr.columns for l in l_syms ]
             r_isin = [ r in expr.columns for r in r_syms ]
-            if (not np.alltrue(l_isin)) or (not np.alltrue(r_isin)):
+            if (not np.all(l_isin)) or (not np.all(r_isin)):
                 continue
             
             ## geometric mean
@@ -159,7 +159,7 @@ class LRdatabase(object):
             l_syms, r_syms = l_sym.split("_"), r_sym.split("_")
             l_isin = [ l in expr.columns for l in l_syms ]
             r_isin = [ r in expr.columns for r in r_syms ]
-            if (not np.alltrue(l_isin)) or (not np.alltrue(r_isin)):
+            if (not np.all(l_isin)) or (not np.all(r_isin)):
                 continue
 
             for g in l_syms:

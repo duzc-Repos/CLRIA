@@ -38,9 +38,9 @@ class BNCM(object):
                             next_node = neighbours_idx[min_index]
 
                         if len(neighbours_idx) == 0 or next_node == last_node or pl_bin > max_hops:
-                            pl_bin = np.Inf
-                            pl_wei = np.Inf
-                            pl_dis = np.Inf
+                            pl_bin = np.inf
+                            pl_wei = np.inf
+                            pl_dis = np.inf
                             break
 
                         paths[i][j].append(next_node)
