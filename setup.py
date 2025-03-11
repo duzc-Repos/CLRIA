@@ -6,7 +6,7 @@ README = (this_directory / "README.md").read_text()
 
 setup(
     name='clria',
-    version='1.0.8',
+    version='1.0.9',
     author='DU Zongchang',
     license='MIT',
     url='https://github.com/duzc-Repos/CLRIA',
