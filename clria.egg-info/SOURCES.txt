@@ -1,6 +1,7 @@
 LICENSE
 MANIFEST.in
 README.md
+requirements.txt
 setup.py
 clria/__init__.py
 clria.egg-info/PKG-INFO

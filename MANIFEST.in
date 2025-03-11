@@ -1,1 +1,4 @@
+include README.md
+include requirements.txt
+include LICENSE 
 include clria/preprocessing/LRdatabase/*.tsv 
